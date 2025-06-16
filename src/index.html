@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="lv" data-attr-t lang-t="lang">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TigSiPay</title>
+    <meta name="description" content="TigSiPay" />
+    <meta name="keywords" content="TigSiPay" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href='/favicon-32x32.png' sizes='any' >
+    <link rel="icon" type="image/png" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png">
+    <link rel="canonical" data-attr-t data-attr-t-interpolate href-t="{{links.baseAbsolute}}filename.{{links.extension}}" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', '');
+    </script>
+    <!-- Start cookieyes banner -->
+    <script
+      id="cookieyes"
+      type="text/javascript"
+      src=""
+    ></script>
+    <!-- End cookieyes banner -->
+  </head>
+
+  <body>
+    <!-- Header -->
+    <%= require('html-loader!./templates/header.html').default %>
+    <!-- End Header -->
+    <main>
+      <!-- Banner -->
+      <div class="banner">
+        <div class="container">
+          <div class="banner-inner">
+            <div class="banner-content">
+              <h1 class="banner-content__title" data-t="home.title">
+                Jūsu uzticamais partneris digitālo un mobilo finanšu pakalpojumu jomā
+              </h1>
+              <div class="banner-content__img">
+                <img src="./images/content/banner.png" alt="" />
+              </div>
+              <div class="banner-links">
+                <div class="buttons">
+                  <a
+                  data-attr-t
+                  data-attr-t-interpolate
+                  href-t="{{common.links.basePath}}/services-and-solutions.html"
+                  href="/services-and-solutions.html" class="button button--witharr button--secondary">
+                    <span data-t="home.forBusinesses">Uzņēmumiem</span>
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.5 1L15 8.5L7.5 16" stroke="#9989C7" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </a>
+                  <a
+                  data-attr-t
+                  data-attr-t-interpolate
+                  href-t="{{common.links.basePath}}/private-person.html"
+                  href="/private-person.html" class="button button--witharr button--secondary">
+                    <span data-t="home.forIndividuals">Privātpersonam</span>
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.5 1L15 8.5L7.5 16" stroke="#9989C7" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </a>
+                </div>
+                <p class="banner-links__text" data-t="home.desc">
+                  TigSiPay ir tehnoloģiju uzņēmums, kas specializējas digitālo un mobilo finanšu pakalpojumu un
+                  maksājumu infrastruktūrā, piedāvājot visaptverošus lojalitātes, finanšu tehnoloģiju un maksājumu
+                  risinājumus.
+                </p>
+              </div>
+            </div>
+            <div class="banner-img">
+              <img src="./images/content/banner.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Banner -->
+
+      <!-- Links -->
+      <section class="links">
+        <div class="container">
+          <h2 class="links__title" data-t="home.weHaveThePayment">Mums ir maksājumu risinājumi jūsu vajadzībām</h2>
+          <div class="links-inner">
+          <div class="links-imageblock links-imageblock--first">
+            <div class="links-imageblock__img links-imageblock__img--purple">
+              <img src="./images/content/icon_store.png.png" alt="">
+            </div>
+            <div class="links-block"">
+              <a
+              data-attr-t
+              data-attr-t-interpolate
+              href-t="{{common.links.basePath}}/services-and-solutions.html"
+              href="/services-and-solutions.html" class="links-block__title">
+                <span class="text" data-t="home.retailSolutions">Risinājumi mazumtirdzniecībai</span>
+                <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1.25" y="0.893066" width="46.5" height="46.5" rx="23.25" stroke="#9989C7" stroke-width="1.5"/>
+                  <path d="M21.5 16.6431L29 24.1431L21.5 31.6431" stroke="#9989C7" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+              </a>
+              <p class="links-block__desc" data-t="home.optimiseYourRetail">
+                Optimizējiet savu mazumtirdzniecības darbību ar mūsu pielāgotajiem risinājumiem. No efektīvas inventāra pārvaldības līdz klientu iesaistīšanas stratēģijām – mūsu tehnoloģijas palīdzēs jums uzlabot darbības efektivitāti un palielināt pārdošanas apjomus.
+              </p>
+            </div>
+        </div>
+
+
+
+          <div class="links-imageblock links-imageblock--second">
+            <div class="links-block"">
+              <a
+              data-attr-t
+              data-attr-t-interpolate
+              href-t="{{common.links.basePath}}/services-and-solutions.html#slider3"
+              href="/services-and-solutions.html#slider3" class="links-block__title">
+                <span class="text" data-t="home.loyaltyProgramme">Lojalitātes programma</span>
+                <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1.25" y="0.893066" width="46.5" height="46.5" rx="23.25" stroke="#9989C7" stroke-width="1.5"/>
+                  <path d="M21.5 16.6431L29 24.1431L21.5 31.6431" stroke="#9989C7" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+              </a>
+              <p class="links-block__desc" data-t="home.buildStrongerCustomer">
+                Veidojiet stiprākas attiecības ar klientiem, izmantojot mūsu pielāgojamās lojalitātes programmas. Piedāvājiet īpašas priekšrocības un palieliniet klientu uzticību, veicinot atkārtotus pirkumus un atšķiroties no konkurentiem.
+              </p>
+            </div>
+            <div class="links-imageblock__img links-imageblock__img--yellow">
+              <img src="./images/content/icon_phone.png.png" alt="">
+            </div>
+          </div>
+
+          <div class="links-imageblock links-imageblock--last">
+            <div class="links-imageblock__img links-imageblock__img--darkSlateBlue">
+              <img src="./images/content/basket.png" alt="">
+            </div>
+          <div class="links-block"">
+            <a
+              data-attr-t
+              data-attr-t-interpolate
+              href-t="{{common.links.basePath}}/marketplace.html"
+              href="/marketplace.html" class="links-block__title">
+              <span class="text" data-t="home.tigSiPayMarketplace">TigSiPay Marketplace</span>
+              <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.25" y="0.893066" width="46.5" height="46.5" rx="23.25" stroke="#9989C7" stroke-width="1.5"/>
+                <path d="M21.5 16.6431L29 24.1431L21.5 31.6431" stroke="#9989C7" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </a>
+            <p class="links-block__desc" data-t="home.discoverNewHorizons">
+              Atklājiet jaunus tirdzniecības apvāršņus ar TigSiPay Marketplace. Pārdodiet savus produktus globālā platformā, kas piedāvā drošus maksājumu risinājumus un ērti lietojamus rīkus veiksmīgai tiešsaistes biznesa attīstībai.
+            </p>
+          </div>
+          </div>
+
+        </div>
+        </div>
+      </section>
+      <!-- End Links -->
+
+      <!-- News -->
+      <section class="news">
+        <div class="container">
+          <div class="news-heading">
+            <h3 class="news-heading__title" data-t="home.latestNewsAboutUs">Jaunākās ziņas par mums</h3>
+            <div class="article">
+              <p class="article__text" data-t="home.followOurNews">
+                Sekojiet mūsu jaunumiem! Šeit mēs regulāri dalāmies ar svarīgākajiem uzņēmuma notikumiem, jaunajiem pakalpojumiem, produktu atjauninājumiem un inovācijām, kā arī nozares jaunumiem.
+              </p>
+              <a
+              data-attr-t
+              data-attr-t-interpolate
+              href-t="{{common.links.basePath}}/blog.html"
+              href="/blog.html" class="button button--secondary" data-t="home.seeAllNews">Skatīt visus jaunumus</a>
+            </div>
+          </div>
+
+          <div class="news-block">
+            <div class="news-block__head">
+              <h4 class="news-block__title news-block__item" data-t="news.businessDirectorTitle">
+                Iepazīstieties ar mūsu biznesa attīstības direktoru – Vilni Jēkabsonu
+              </h4>
+              <a
+                data-attr-t
+                data-attr-t-interpolate
+                href-t="{{common.links.basePath}}/NEWS_Business_Director.html"
+                href="/NEWS_Business_Director.html"
+                class="button button--secondary sm-iblock"
+                data-t="news.readMore"
+                >Lasīt vairāk</a
+              >
+            </div>
+            <div class="news-block__item">
+              <p class="news-block__date">05.02.2025</p>
+              <p class="news-block__text" data-t="news.businessDirectorDescription">
+                Ar šo rakstu mēs aizsākam jaunu ziņu rubriku par mūsu komandu, lai iepazīstinātu jūs ar cilvēkiem, kuri
+                padara TigSiPay par vienu no inovatīvākajiem jaunuzņēmumiem Latvijā.
+              </p>
+              <a
+                data-attr-t
+                data-attr-t-interpolate
+                href-t="{{common.links.basePath}}/NEWS_Business_Director.html"
+                href="/NEWS_Business_Director.html"
+                class="button button--secondary sm-hide"
+                data-t="news.readMore"
+                >Lasīt vairāk</a
+              >
+            </div>
+            <div class="news-block__pic">
+              <img class="img-absolute" src="./images/content/NEWS_Business_Director.jpeg" style="object-position: 0px -20px;" alt="" />
+            </div>
+          </div>
+
+          <div class="news-block">
+            <div class="news-block__head">
+              <h4 class="news-block__title news-block__item" data-t="news.congratulationsTitle">
+                Sveicam Ziemassvētkos un vēlam veiksmīgu Jauno gadu!
+              </h4>
+              <a
+                data-attr-t
+                data-attr-t-interpolate
+                href-t="{{common.links.basePath}}/NEWS_Congratulations.html"
+                href="/NEWS_Congratulations.html"
+                class="button button--secondary sm-iblock"
+                data-t="news.readMore"
+                >Lasīt vairāk</a
+              >
+            </div>
+            <div class="news-block__item">
+              <p class="news-block__date">23.12.2024</p>
+              <p class="news-block__text" data-t="news.congratulationsDescription">
+                Pateicība par sadarbību un vēlējumi gaišiem svētkiem un veiksmīgam Jaunajam gadam!
+              </p>
+              <a
+                data-attr-t
+                data-attr-t-interpolate
+                href-t="{{common.links.basePath}}/NEWS_Congratulations.html"
+                href="/NEWS_Congratulations.html"
+                class="button button--secondary sm-hide"
+                data-t="news.readMore"
+                >Lasīt vairāk</a
+              >
+            </div>
+            <div class="news-block__pic">
+              <img class="img-absolute" src="./images/content/NEWS_Congratulations.png" alt="" />
+            </div>
+          </div>
+
+          <div class="news-block">
+            <div class="news-block__head">
+              <h4 class="news-block__title news-block__item" data-t="news.workingHoursTitle">
+                Par TigSiPay darbu Ziemassvētku un Jaunā gada laikā
+              </h4>
+              <a
+                data-attr-t
+                data-attr-t-interpolate
+                href-t="{{common.links.basePath}}/NEWS_Working_Hours.html"
+                href="/NEWS_Working_Hours.html"
+                class="button button--secondary sm-iblock"
+                data-t="news.readMore"
+                >Lasīt vairāk</a
+              >
+            </div>
+            <div class="news-block__item">
+              <p class="news-block__date">20.12.2024</p>
+              <p class="news-block__text" data-t="news.workingHoursDescription">
+                Darba laika izmaiņas Ziemassvētku un Jaunā gada svētku laikā
+              </p>
+              <a
+                data-attr-t
+                data-attr-t-interpolate
+                href-t="{{common.links.basePath}}/NEWS_Working_Hours.html"
+                href="/NEWS_Working_Hours.html"
+                class="button button--secondary sm-hide"
+                data-t="news.readMore"
+                >Lasīt vairāk</a
+              >
+            </div>
+            <div class="news-block__pic">
+              <img class="img-absolute" src="./images/content/NEWS_Working_Hours.png" alt="" />
+            </div>
+          </div>
+
+          <div class="news-block">
+            <div class="news-block__head">
+              <h4 class="news-block__title news-block__item" data-t="news.tigsiParticipatesSeminarTitle">
+                TigSiPay piedalās Latvijas Bankas organizētajā seminārā tirgus dalībniekiem
+              </h4>
+              <a
+                data-attr-t
+                data-attr-t-interpolate
+                href-t="{{common.links.basePath}}/NEWS_Tigsi_Participates_Seminar.html"
+                href="/NEWS_Tigsi_Participates_Seminar.html"
+                class="button button--secondary sm-iblock"
+                data-t="news.readMore"
+                >Lasīt vairāk</a
+              >
+            </div>
+            <div class="news-block__item">
+              <p class="news-block__date">27.11.2024</p>
+              <p class="news-block__text" data-t="news.tigsiParticipatesSeminarDescription">
+                Seminārā apspriestas kiberdrošības, kriptoaktīvu regulējuma, naudas atmazgāšanas novēršanas un SEPA
+                Instant maksājumu aktualitātes
+              </p>
+              <a
+                data-attr-t
+                data-attr-t-interpolate
+                href-t="{{common.links.basePath}}/NEWS_Tigsi_Participates_Seminar.html"
+                href="/NEWS_Tigsi_Participates_Seminar.html"
+                class="button button--secondary sm-hide"
+                data-t="news.readMore"
+                >Lasīt vairāk</a
+              >
+            </div>
+            <div class="news-block__pic">
+              <img class="img-absolute" src="./images/content/NEWS_Tigsi_Participates_Seminar.png" alt="" />
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- End News -->
+
+      <!-- Subscribe -->
+      <%= require('html-loader!./templates/form.html').default %>
+      <!-- End Subscribe -->
+    </main>
+    <!-- Footer -->
+    <%= require('html-loader!./templates/footer.html').default %>
+    <!-- End Footer -->
+  </body>
+</html>

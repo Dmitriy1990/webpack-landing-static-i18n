@@ -1,0 +1,80 @@
+/**
+ * Fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.005em;
+  @media (max-width: 768px) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.88px;
+  letter-spacing: 0.005em;
+  @media (max-width: 768px) {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+.h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  letter-spacing: 0.005em;
+  text-align: left;
+}
+
+.h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.text {
+  &__base {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.13px;
+    letter-spacing: 0.005em;
+    text-align: left;
+  }
+  &__thin {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  &__italic {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 37.28px;
+    text-align: left;
+    color: $darkSlateBlue;
+  }
+}
+
+.white {
+  color: $white;
+}
+
+.text-center {
+  text-align: center;
+}

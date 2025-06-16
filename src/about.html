@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="lv" data-attr-t lang-t="lang">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-t="header.aboutUs">About</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', '');
+    </script>
+    <!-- Start cookieyes banner -->
+    <!-- <script
+      id="cookieyes"
+      type="text/javascript"
+      src=""
+    ></script> -->
+    <!-- End cookieyes banner -->
+  </head>
+  <body>
+    <!-- Header -->
+    <%= require('html-loader!./templates/header.html').default %>
+    <!-- End Header -->
+    <main>
+      <!-- Banner -->
+      <section class="about-banner">
+        <div class="container">
+          <h1 class="h1 about-banner__title" data-t="about.title">Jūs esat labā kompānijā!</h1>
+          <div class="about-section__inner">
+            <div class="about-banner__text about-banner__text--left">
+              <p class="mb10 text__base" data-t="about.weDevelopInnovations">
+                Mēs izstrādājam inovācijas, kas patiešām darbojas, piesaistot mūsu partneru veikaliem jaunus klientus,
+                palielinot vidējos ieņēmumus un naudas plūsmu.
+              </p>
+              <p class="mb10 text__base" data-t="about.ourGoalIsToHelp">
+                Mūsu mērķis ir palīdzēt saviem partneriem attīstīt uzņēmējdarbību, izmantojot unikālas idejas un
+                modernākās tehnoloģijas.
+              </p>
+            </div>
+            <div class="about-banner__text">
+              <p class="mb10 text__base" data-t="about.tigSiPayIsTechnology">
+                TigSiPay ir tehnoloģiju uzņēmums, kas specializējas digitālo un mobilo finanšu pakalpojumu, darījumu un
+                maksājumu infrastruktūras jomā. Mēs esam vienas pieturas aģentūra visiem lojalitātes, finanšu
+                tehnoloģiju risinājumiem un maksājumiem.
+              </p>
+              <p class="mb10 text__base" data-t="about.whenYouChooseTigSiPay">
+                Izvēloties TigSiPay, jūs izvēlaties uzticamu un inovāciju vadītu partneri, kas palīdzēs jums sasniegt
+                jūsu biznesa mērķus un palielināt konkurētspēju tirgū.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Banner -->
+
+      <!-- Banner -->
+      <section class="constacts-section">
+        <div class="container">
+          <div class="headline">
+            <h2 class="h2 headline__title" data-t="about.contact">Kontaktinformācija</h2>
+          </div>
+          <div class="about-section__inner about-section__inner--reverse">
+            <div class="about-banner__text about-banner__text--left">
+              <p class=" constacts-section__title md-hide">TigSiPay SIA</p>
+              <iframe
+                src="https://www.google.com/maps/embed"
+                width="100%"
+                height="500"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="about-banner__text">
+              <div class="constacts-section__text text__base">
+                <p class=" md-block constacts-section__title">TigSiPay SIA</p>
+                <p class="mb30" data-t="about.electronicMoneyInstitution">
+                  Elektroniskās naudas iestādes licence nr. 27-55/2024/3
+                </p>
+                <div class="mb30">
+                  <p class="mb10" data-t="about.addressForCorrespondence">Adrese sarakstei:</p>
+                  <p data-t="about.skanstes">Skanstes iela 7 k-1, 12. Stāvs, Rīga, LV-1013</p>
+                </div>
+                <div class="mb30">
+                  <p class="mb10" data-t="about.registrationNumber">Reģistrācijas numurs:</p>
+                  <p>40203344731</p>
+                </div>
+                <div class="mb30">
+                  <p class="mb10" data-t="about.email">E-pasts:</p>
+                  <a href="mailto:info@tigsipay.com">info@tigsipay.com</a>
+                </div>
+                <p class="mb10" data-t="about.socialNetworks">Sociālie tīkli</p>
+                <div class="about-social">
+                  <a href="/" target="_blank">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.0357 8.24999C11.4643 8.24999 7.82142 11.9643 7.82142 16.4643C7.82142 21.0357 11.4643 24.6786 16.0357 24.6786C20.5356 24.6786 24.2501 21.0357 24.2501 16.4643C24.2501 11.9643 20.5356 8.24999 16.0357 8.24999ZM16.0357 21.8214C13.1071 21.8214 10.6786 19.4643 10.6786 16.4643C10.6786 13.5357 13.0357 11.1786 16.0357 11.1786C18.9643 11.1786 21.3215 13.5357 21.3215 16.4643C21.3215 19.4643 18.9643 21.8214 16.0357 21.8214ZM26.4643 7.96428C26.4643 6.89284 25.6071 6.03571 24.5357 6.03571C23.4642 6.03571 22.6072 6.89284 22.6072 7.96428C22.6072 9.0357 23.4642 9.89283 24.5357 9.89283C25.6071 9.89283 26.4643 9.0357 26.4643 7.96428ZM31.8929 9.89283C31.75 7.32142 31.1785 5.03571 29.3215 3.17857C27.4643 1.32143 25.1786 0.75 22.6072 0.607142C19.9643 0.464286 12.0357 0.464286 9.39286 0.607142C6.82142 0.75 4.60714 1.32143 2.67857 3.17857C0.821429 5.03571 0.250001 7.32142 0.107142 9.89283C-0.0357141 12.5357 -0.0357141 20.4644 0.107142 23.107C0.250001 25.6786 0.821429 27.8928 2.67857 29.8214C4.60714 31.6786 6.82142 32.2499 9.39286 32.3927C12.0357 32.5358 19.9643 32.5358 22.6072 32.3927C25.1786 32.2499 27.4643 31.6786 29.3215 29.8214C31.1785 27.8928 31.75 25.6786 31.8929 23.107C32.0357 20.4644 32.0357 12.5357 31.8929 9.89283ZM28.4643 25.8928C27.9643 27.3215 26.8214 28.3928 25.4642 28.9642C23.3213 29.8214 18.3214 29.6072 16.0357 29.6072C13.6786 29.6072 8.67858 29.8214 6.60715 28.9642C5.17857 28.3928 4.10715 27.3215 3.53572 25.8928C2.67857 23.8214 2.89286 18.8214 2.89286 16.4643C2.89286 14.1786 2.67857 9.17856 3.53572 7.03572C4.10715 5.67857 5.17857 4.60713 6.60715 4.0357C8.67858 3.17857 13.6786 3.39286 16.0357 3.39286C18.3214 3.39286 23.3213 3.17857 25.4642 4.0357C26.8214 4.53572 27.8928 5.67857 28.4643 7.03572C29.3215 9.17856 29.1072 14.1786 29.1072 16.4643C29.1072 18.8214 29.3215 23.8214 28.4643 25.8928Z"
+                        fill="#121212"
+                      />
+                    </svg>
+                  </a>
+                  <a href="/" target="_blank">
+                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M35 17.6065C35 7.88031 27.1672 0 17.5 0C7.83263 0 0 7.88031 0 17.6065C0 26.4098 6.35078 33.7221 14.7479 35V22.7179H10.3024V17.6065H14.7479V13.7728C14.7479 9.3712 17.3588 6.88641 21.3103 6.88641C23.2862 6.88641 25.2621 7.24138 25.2621 7.24138V11.572H23.0744C20.887 11.572 20.1813 12.9209 20.1813 14.3408V17.6065H25.0503L24.2741 22.7179H20.1813V35C28.5785 33.7221 35 26.4098 35 17.6065Z"
+                        fill="#121212"
+                      />
+                    </svg>
+                  </a>
+                  <a href="/" target="_blank">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M29.7143 0.5H2.21428C1 0.5 0 1.57143 0 2.85715V30.2143C0 31.5 1 32.5 2.21428 32.5H29.7143C30.9287 32.5 32 31.5 32 30.2143V2.85715C32 1.57143 30.9287 0.5 29.7143 0.5ZM9.64285 27.9286H4.92857V12.7143H9.64285V27.9286ZM7.28572 10.5714C5.71429 10.5714 4.49999 9.35715 4.49999 7.85714C4.49999 6.35714 5.71429 5.07143 7.28572 5.07143C8.78572 5.07143 10 6.35714 10 7.85714C10 9.35715 8.78572 10.5714 7.28572 10.5714ZM27.4286 27.9286H22.6428V20.5001C22.6428 18.7857 22.6428 16.5 20.2142 16.5C17.7143 16.5 17.3571 18.4286 17.3571 20.4286V27.9286H12.6429V12.7143H17.1429V14.7857H17.2143C17.8571 13.5714 19.4286 12.2857 21.7143 12.2857C26.5001 12.2857 27.4286 15.5 27.4286 19.5714V27.9286Z"
+                        fill="#121212"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Banner -->
+
+      <!-- Map -->
+      <!-- <div class="map-block">
+        <img class="map-block__img" src="./images/content/map.jpg" alt="" />
+      </div> -->
+
+      <!-- End Map -->
+
+      <!-- Subscribe -->
+      <%= require('html-loader!./templates/form.html').default %>
+      <!-- End Subscribe -->
+    </main>
+    <!-- Footer -->
+    <%= require('html-loader!./templates/footer.html').default %>
+    <!-- End Footer -->
+  </body>
+</html>

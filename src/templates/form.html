@@ -1,0 +1,116 @@
+<section class="subscribe">
+  <div class="container">
+    <div class="subscribe-inner">
+      <div class="subscribe-form">
+        <div class="subscribe-social-head sm-block">
+          <h3 class="subscribe-social__title" data-t="form.contactTo">Sazinieties ar mums!</h3>
+          <p class="subscribe-social__text" data-t="form.askYourQuestion">
+            Uzdodiet savu jautājumu, un mēs ar jums sazināsimies!
+          </p>
+        </div>
+        <form action="" id="contact-form">
+          <div class="">
+            <input
+              id="name"
+              type="text"
+              class="field"
+              placeholder="Vārds"
+              name="name"
+              data-attr-t
+              placeholder-t="form.name"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="">
+            <input
+              id="email"
+              type="email"
+              class="field"
+              placeholder="E-pasts"
+              name="email"
+              data-attr-t
+              placeholder-t="form.email"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="">
+            <textarea
+              name="textarea"
+              id="message"
+              cols="30"
+              rows="10"
+              class="field textarea"
+              placeholder="Ziņojums..."
+              data-attr-t
+              placeholder-t="form.message"
+            ></textarea>
+            <div class="error"></div>
+          </div>
+          <div class="checkbox">
+            <div class="round">
+              <input type="checkbox" id="checkbox" name="checkbox" />
+              <label for="checkbox"></label>
+              <div class="error"></div>
+            </div>
+            <p class="checkbox__label">
+              <span data-t="form.click"
+                >Klikšķinot uz ‘Sūtīt’, es apstiprinu, ka esmu izlasījis un piekrītu TigSiPay</span
+              >
+              <a data-attr-t data-attr-t-interpolate href-t="/{{lang}}/documents.html" data-t="form.terms"
+                >Privātuma politikai un Sīkdatņu politikai</a
+              >
+              <span data-t="form.ofTigSiPay"></span>
+            </p>
+          </div>
+          <button type="submit" class="button button--full button--medium" data-t="form.sendTo">Sūtīt</button>
+        </form>
+      </div>
+
+      <div class="subscribe-social">
+        <div class="subscribe-social-head sm-hide">
+          <h3 class="subscribe-social__title" data-t="form.contactTo">Sazinieties ar mums!</h3>
+          <p class="subscribe-social__text" data-t="form.askYourQuestion">
+            Uzdodiet savu jautājumu, un mēs ar jums sazināsimies!
+          </p>
+        </div>
+        <div class="subscribe-socialbottom">
+          <a href="mailto:info@tigsipay.com" class="subscribe-socialbottom__link link-btn">info@tigsipay.com</a>
+          <div class="subscribe-socialbottom__inner">
+            <a
+              href="/"
+              target="_blank"
+              class="subscribe-socialbottom__link link-btn"
+            >
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.0312 6.78124C10.0312 6.78124 6.84375 10.0312 6.84375 13.9687C6.84375 17.9687 10.0312 21.1563 14.0312 21.1563C17.9687 21.1563 21.2188 17.9687 21.2188 13.9687C21.2188 10.0312 17.9687 6.78124 14.0312 6.78124ZM14.0312 18.6562C11.4687 18.6562 9.34375 16.5937 9.34375 13.9687C9.34375 11.4062 11.4063 9.34374 14.0312 9.34374C16.5938 9.34374 18.6563 11.4062 18.6563 13.9687C18.6563 16.5937 16.5938 18.6562 14.0312 18.6562ZM23.1562 6.53125C23.1562 5.59374 22.4062 4.84375 21.4688 4.84375C20.5312 4.84375 19.7813 5.59374 19.7813 6.53125C19.7813 7.46874 20.5312 8.21873 21.4688 8.21873C22.4062 8.21873 23.1562 7.46874 23.1562 6.53125ZM27.9063 8.21873C27.7813 5.96874 27.2812 3.96874 25.6563 2.34375C24.0312 0.718749 22.0312 0.21875 19.7813 0.0937492C17.4687 -0.0312497 10.5312 -0.0312497 8.21875 0.0937492C5.96874 0.21875 4.03125 0.718749 2.34375 2.34375C0.71875 3.96874 0.21875 5.96874 0.0937496 8.21873C-0.0312499 10.5312 -0.0312499 17.4688 0.0937496 19.7812C0.21875 22.0313 0.71875 23.9687 2.34375 25.6562C4.03125 27.2812 5.96874 27.7812 8.21875 27.9061C10.5312 28.0313 17.4687 28.0313 19.7813 27.9061C22.0312 27.7812 24.0312 27.2812 25.6563 25.6562C27.2812 23.9687 27.7813 22.0313 27.9063 19.7812C28.0312 17.4688 28.0312 10.5312 27.9063 8.21873ZM24.9063 22.2187C24.4688 23.4688 23.4688 24.4062 22.2812 24.9061C20.4062 25.6562 16.0312 25.4688 14.0312 25.4688C11.9687 25.4688 7.59376 25.6562 5.78126 24.9061C4.53125 24.4062 3.59376 23.4688 3.09376 22.2187C2.34375 20.4062 2.53125 16.0312 2.53125 13.9687C2.53125 11.9687 2.34375 7.59374 3.09376 5.71875C3.59376 4.53125 4.53125 3.59374 5.78126 3.09374C7.59376 2.34375 11.9687 2.53125 14.0312 2.53125C16.0312 2.53125 20.4062 2.34375 22.2812 3.09374C23.4688 3.53125 24.4062 4.53125 24.9063 5.71875C25.6563 7.59374 25.4688 11.9687 25.4688 13.9687C25.4688 16.0312 25.6563 20.4062 24.9063 22.2187Z"
+                  fill="#FFFCFC"
+                />
+              </svg>
+            </a>
+            <a href="" target="_blank" class="subscribe-socialbottom__link link-btn">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M28 14.0852C28 6.30425 21.7338 0 14 0C6.26611 0 0 6.30425 0 14.0852C0 21.1278 5.08063 26.9777 11.7984 28V18.1743H8.24191V14.0852H11.7984V11.0182C11.7984 7.49696 13.8871 5.50913 17.0483 5.50913C18.629 5.50913 20.2096 5.7931 20.2096 5.7931V9.2576H18.4596C16.7096 9.2576 16.1451 10.3367 16.1451 11.4726V14.0852H20.0402L19.4193 18.1743H16.1451V28C22.8628 26.9777 28 21.1278 28 14.0852Z"
+                  fill="#FFFCFC"
+                />
+              </svg>
+            </a>
+            <a
+              href="/"
+              target="_blank"
+              class="subscribe-socialbottom__link link-btn"
+            >
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M26 0H1.93749C0.875001 0 0 0.9375 0 2.06251V26C0 27.125 0.875001 28 1.93749 28H26C27.0626 28 28 27.125 28 26V2.06251C28 0.9375 27.0626 0 26 0ZM8.43749 24H4.3125V10.6875H8.43749V24ZM6.375 8.8125C5 8.8125 3.93749 7.75001 3.93749 6.43749C3.93749 5.125 5 4 6.375 4C7.6875 4 8.75001 5.125 8.75001 6.43749C8.75001 7.75001 7.6875 8.8125 6.375 8.8125ZM24 24H19.8124V17.5001C19.8124 16 19.8124 14 17.6875 14C15.5 14 15.1875 15.6875 15.1875 17.4375V24H11.0625V10.6875H15V12.5H15.0625C15.625 11.4375 17 10.3125 19 10.3125C23.1876 10.3125 24 13.125 24 16.6875V24Z"
+                  fill="#FFFCFC"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

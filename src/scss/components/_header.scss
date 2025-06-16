@@ -1,0 +1,242 @@
+.header {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__logo {
+    width: 100px;
+    position: relative;
+    z-index: 4;
+    svg {
+      width: 50px;
+      height: auto;
+    }
+    @media (max-width: 768px) {
+      width: 75px;
+      svg {
+        width: 75px;
+      }
+    }
+  }
+  &.active {
+    .header__logo {
+      svg path {
+        fill: $white;
+      }
+    }
+  }
+  &-burger {
+    width: 40px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 9999;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    @media (max-width: 1300px) {
+      display: flex;
+      margin-top: 8px;
+    }
+    div {
+      width: 100%;
+      height: 2px;
+      margin-bottom: 7px;
+      transition: all 0.3s linear;
+      position: relative;
+      border-radius: 2px;
+      transform-origin: 6px;
+      pointer-events: none;
+      margin-left: 1px;
+      background: $yellow;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+    &.open {
+      div {
+        background: $white;
+      }
+      div:first-child {
+        transform: rotate(42deg);
+      }
+      div:nth-child(2) {
+        opacity: 0;
+      }
+      div:nth-child(3) {
+        transform: rotate(-42deg);
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  border: 1.5px solid $yellow;
+  height: 50px;
+  @media (max-width: 1300px) {
+    position: absolute;
+    top: -20px;
+    left: -120%;
+    width: 100%;
+    height: 100vh;
+    background: $darkSlateBlue;
+    border: none;
+    border-radius: 0;
+    min-height: 500px;
+    align-items: flex-start;
+    transition: 0.3s;
+    &.open {
+      left: -30px;
+      width: 110%;
+      @media (max-width: 767px) {
+        width: 116%;
+      }
+    }
+  }
+  &-menu {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    &__label {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      margin-right: 20px;
+    }
+  }
+
+  &-list {
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    @media (max-width: 1300px) {
+      flex-direction: column;
+      margin-top: 180px;
+      width: 100%;
+      align-items: flex-end;
+      padding-right: 50px;
+    }
+    &__item {
+      margin-right: 20px;
+      @media (max-width: 1300px) {
+        margin-bottom: 40px;
+        margin-right: 0;
+
+        &--hide {
+          display: none;
+          margin-right: 0;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &.active {
+        padding: 15px 20px;
+        gap: 10px;
+        border-radius: 30px;
+        background: $yellow;
+      }
+    }
+    &__link {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: $black;
+      transition: 0.3s;
+      @media (max-width: 1300px) {
+        color: $white;
+      }
+      &.active {
+        color: $yellow;
+      }
+      &:hover {
+        color: $yellow;
+      }
+      &--last {
+        color: $black;
+      }
+    }
+  }
+  &-right {
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 4;
+    @media (max-width: 768px) {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .nav-list__item {
+      @media (max-width: 768px) {
+        margin-bottom: 0;
+        padding: 10px 20px;
+      }
+    }
+    .nav-list__link {
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  row-gap: 10px;
+  height: 50px;
+  position: relative;
+  z-index: 4;
+  @media (max-width: 1300px) {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  @media (max-width: 768px) {
+    margin-left: auto;
+  }
+  &__item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.active {
+      border: 2px solid #fad732;
+    }
+    @media (max-width: 768px) {
+      font-size: 16px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
